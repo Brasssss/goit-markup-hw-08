@@ -179,7 +179,7 @@
 }
 
 .input-check:checked+.agree-check .check-span {
-  background-color: var(--accent-color-blue);
+  background-color:$accent-color-blue;
   border: none;
   fill: $border-color-grey;
 }

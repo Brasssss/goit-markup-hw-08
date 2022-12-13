@@ -1017,7 +1017,7 @@ a {
 }
 
 .input-check:checked + .agree-check .check-span {
-  background-color: var(--accent-color-blue);
+  background-color: #2196f3;
   border: none;
   fill: #ececec;
 }

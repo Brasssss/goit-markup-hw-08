@@ -1,6 +1,6 @@
 
 @mixin calc($count, $gap){
-  width: calc((100% - ($count-1)*$gap) / $count);
+  width: calc((100% - ($count - 1) * $gap) / $count);
 }
 
 @mixin mobile {

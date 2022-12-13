@@ -37,6 +37,9 @@ address {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 ul {
@@ -55,6 +58,11 @@ a {
   letter-spacing: 0.03em;
 }
 
+.section {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -70,11 +78,24 @@ a {
 }
 
 .container {
-  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
-  /* border: 2px solid red; */
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .header {
@@ -277,44 +298,41 @@ a {
   background-color: #ffffff;
 }
 
-.features {
-  padding-top: 94px;
-}
-
 .features__list {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
-
 .features__item {
   display: flex;
-  flex-direction: column;
-  max-width: 270px;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
 }
-
-.features__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .features__item {
+    width: calc((100% - 30px) / 2);
+  }
 }
-
 .features__div-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 100%;
   height: 120px;
+  padding: 25px auto;
   border-radius: 4px;
   background-color: #f5f4fa;
 }
-
 .features__title {
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 10px;
-  color: var(--text-color-black);
-  text-transform: uppercase;
   font-weight: 700;
   line-height: 1.14;
-  font-size: 14px;
+  text-transform: uppercase;
 }
-
 .features__text {
   color: #757575;
   line-height: 1.71;

@@ -1,0 +1,37 @@
+.logo {
+  display: block;
+  
+
+  color: $logo-color-black;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo--top-distance{
+  padding-top: 24px;
+}
+.logo--bottom-distance{
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.logo__first-part {
+  color: $logo-color-blue;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logo__second-part{
+font-family: 'Raleway',
+sans-serif;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.2;
+}
+
+.logo__second-part--color{
+  color: $text-color-white;
+}

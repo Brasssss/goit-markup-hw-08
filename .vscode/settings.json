@@ -1,0 +1,35 @@
+{
+    "workbench.editorAssociations": {
+        "*.html": "default"
+    },
+    "editor.unicodeHighlight.allowedCharacters": {
+        "а": true
+    },
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "liveSassCompile.settings.formats": [
+        
+        
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "css",
+            "savePathReplacementPairs": null
+        },
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "css",
+            "savePathReplacementPairs": null
+        }
+    ],
+    "liveSassCompile.settings.includeItems": [
+
+
+
+    
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.forceBaseDirectory": "",
+    "liveSassCompile.settings.rootIsWorkspace": null
+}

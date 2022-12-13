@@ -15,11 +15,10 @@
   align-items: center;
   width: 100%;
 
-  @media screen and (min-width: 768px) {
-      @include calc (2, 30px);
-    }
+  
   
 }
+
 &__div-icon {
   display: flex;
   justify-content: center;
@@ -32,7 +31,7 @@
 }
 
 &__title{
-  margin-top: 25px;
+  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
@@ -45,35 +44,15 @@
   line-height: 1.71;
 }
 
+@media screen and (min-width: 768px) {
+  &__item{
+  @include calc (2, 30px);
+  }
 }
 
-// &__list{
-//   display: flex;
-// }
-
-// &__item {
-//   display: flex;
-//   flex-direction: column;
-//   max-width: 270px;
-// }
-
-// &__item:not(:last-child) {
-//   margin-right: 30px;
-// }
-
-// &__div-icon {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 270px;
-//   height: 120px;
-//   border-radius: 4px;
-//   background-color: $background-color-dark-white;
-// }
-
-// &__title {
-//   margin-top: 30px;
-//   margin-bottom: 10px;
-//  
-// }
-
+@media screen and (min-width: 1600px) {
+  &__item {
+  @include calc (4, 30px);
+}
+}
+}

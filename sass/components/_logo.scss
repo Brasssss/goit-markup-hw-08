@@ -1,37 +1,58 @@
-.logo {
-  display: block;
-  
 
+.logo {
+  // display: block;
+  display: flex;
+  align-items: center;
+  
   color: $logo-color-black;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-.logo--top-distance{
-  padding-top: 24px;
-}
-.logo--bottom-distance{
-  padding-top: 60px;
-  padding-bottom: 20px;
-}
+  font-size: 24px;
+  line-height: calc (28/24);
 
-.logo__first-part {
+
+// &--top-distance{
+//   padding-top: 24px;
+// }
+
+// &--bottom-distance{
+//   padding-top: 60px;
+//   padding-bottom: 20px;
+// }
+
+&__first-part {
   color: $logo-color-blue;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  // font-size: 26px;
+  // line-height: 1.2;
 }
 
-.logo__second-part{
+&__second-part{
 font-family: 'Raleway',
 sans-serif;
 font-weight: 700;
-font-size: 26px;
-line-height: 1.2;
+
+// font-size: 26px;
+// line-height: 1.2;
 }
 
-.logo__second-part--color{
+&__second-part--color{
   color: $text-color-white;
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) {
+
+  
+}
+
+@media screen and (min-width: 1200px) {
+
+  font-size: 26px;
+  line-height: calc (31/26);
+}
+
 }

@@ -1,0 +1,70 @@
+
+
+.navigate {
+  display: flex;
+  width: 100%;
+  height: 60px;
+
+
+  &__list {
+    display: flex;
+    display: none;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__item:first-child {
+    margin-left: 93px;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $text-color-black;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color-blue;
+  }
+
+  &__link--active {
+    color: $accent-color-blue;
+  }
+
+  &__link--active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+
+    background: $accent-color-blue;
+  }
+
+
+  @media screen and (min-width: 768px) {
+    height: 80px;
+    &__list {
+      display: flex;
+    }
+
+  }
+  @media screen and (min-width: 768px) {
+    
+  }
+}

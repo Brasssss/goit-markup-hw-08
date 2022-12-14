@@ -1,113 +1,25 @@
+
+
 .header {
   background-color: $background-color-full-white;
-
   border-bottom: 1px solid $border-color-grey;
 }
 
-
-
 .top-place{
   display: flex;
-  justify-content: space-between;
-
+  
 }
-.navigate {
+
+.header__burger-btn{
   display: flex;
-}
-
-
-.nav-list,
-.contacts {
-  display: flex;
-}
-
-.nav-list__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.nav-list__item:first-child {
-  margin-left: 93px;
-}
-
-.nav-list__link {
-  position: relative;
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  color: $text-color-black;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  transition-property: color;
-  transition-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-list__link:hover,
-.nav-list__link:focus {
-  color: $accent-color-blue;
-}
-
-.nav-list__link--active {
-  color: $accent-color-blue;
-}
-
-.nav-list__link--active::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-
-  background: $accent-color-blue;
-}
-
-.contacts__link {
-  display: flex;
+  justify-content: center;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-left: auto;
+  background-color: $background-color-full-white;
 
-  color: $text-color-grey;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @media screen and (min-width: 768px) {
+    display: none;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
-
-.contacts__link:hover,
-.contacts__link:hover .contacts__icon {
-  color: $accent-color-blue;
-  fill: $accent-color-blue;
-}
-
-.contacts__link:focus,
-.contacts__link:focus .contacts__icon {
-  color: $accent-color-blue;
-  fill: $accent-color-blue;
-}
-
-.contacts__icon {
-  margin-right: 10px;
-  fill: $text-color-grey;
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.contacts__link:hover,
-.contacts__link:focus {
-  color: $accent-color-blue;
 }

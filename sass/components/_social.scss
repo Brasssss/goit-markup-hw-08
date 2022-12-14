@@ -1,0 +1,58 @@
+
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  &__item,
+  &__link,
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+
+    fill: $cliets-logo;
+    transition-property: fill;
+    transition-duration: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__icon {
+    fill: $cliets-logo;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link:hover,
+  &__link:hover .social-link {
+    background-color: $accent-color-blue;
+    fill: $background-color-full-white;
+  }
+
+  &__link:focus,
+  &__link:focus .social-link {
+    background-color: $accent-color-blue;
+    fill: $background-color-full-white;
+  }
+}

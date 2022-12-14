@@ -1,12 +1,13 @@
 .services{
   padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 
 
 .services__title {
   margin-bottom: 50px;
-
   color: $text-color-black;
   font-weight: 700;
   font-size: 36px;
@@ -24,7 +25,15 @@
 
 .services__div-image {
   position: relative;
+  width: 370px;
+  height: 294px;
 }
+// .services__image{
+//   display: block;
+//   width: 100%;
+//   height: auto;
+
+// }
 
 .services__image-subscriprion {
   position: absolute;

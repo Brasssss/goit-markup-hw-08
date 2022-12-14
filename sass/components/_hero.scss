@@ -1,7 +1,9 @@
+
+
 .hero {
   display: block;
   margin: 0 auto;
-  padding: 200px 0;
+  padding: 118px 40px;
 
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-background-img.jpg);
@@ -11,34 +13,36 @@
   background-repeat: no-repeat;
 
   background-color: $background-color-black;
-}
 
-.hero__inner {
-  max-width: 696px;
+
+&__inner {
+
   margin: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.hero__title {
+&__title {
   margin-bottom: 30px;
 
   color: $text-color-white;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 1.88;
   text-align: center;
+  text-transform: uppercase;
   letter-spacing: 0.06em;
 }
 
-.hero__button {
-  width: 216px;
+&__button {
+  width: 200px;
   height: 50px;
   margin: 0 auto;
   color: $text-color-white;
   background-color: $accent-color-blue;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.5;
   letter-spacing: 0.06em;
   cursor: pointer;
 
@@ -48,8 +52,61 @@
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero__button:hover,
-.hero__button:focus {
+&__button:hover,
+&__button:focus {
   color: $text-color-black;
   background-color: $background-color-full-white;
 }
+@media screen and (min-width: 480px) { 
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1200px) {
+
+&__inner {
+  
+  width: 100%;
+  margin: auto;
+}
+&__title {
+
+  font-size: 44px;
+  line-height: 1.88;
+}
+&__button {
+  width: 216px;
+}
+}
+}
+
+
+// .hero__title {
+
+//   font-size: 44px;
+//   line-height: 1.36;
+// }
+
+
+// .hero__button {
+//   width: 216px;
+//   height: 50px;
+//   margin: 0 auto;
+//   color: $text-color-white;
+//   background-color: $accent-color-blue;
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.88;
+//   letter-spacing: 0.06em;
+//   cursor: pointer;
+
+//   transition-property: color;
+//   transition-property: background-color;
+//   transition-duration: 250ms;
+//   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .hero__button:hover,
+// .hero__button:focus {
+//   color: $text-color-black;
+//   background-color: $background-color-full-white;
+// }

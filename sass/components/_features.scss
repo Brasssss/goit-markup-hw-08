@@ -1,6 +1,7 @@
 
 
 .features {
+  padding-top: 94px;
 
 &__list{
   display: flex;
@@ -44,13 +45,14 @@
   line-height: 1.71;
 }
 
+
 @media screen and (min-width: 768px) {
   &__item{
   @include calc (2, 30px);
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   &__item {
   @include calc (4, 30px);
 }

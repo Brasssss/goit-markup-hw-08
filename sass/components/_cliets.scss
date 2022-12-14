@@ -4,31 +4,41 @@
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: $background-color-full-white;
-}
-.clients__title {
+
+&__title {
   margin-bottom: 50px;
 
   color: var(--text-color-black);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: calc(32/28);
+  // font-size: 36px;
+  // line-height: 1.17;
   text-align: center;
 }
 
-.clients__list,
-.clients__item,
-.clients__link {
+
+
+
+&__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  column-gap: 30px;
+}
+&__item{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 50%;
 }
-
-.clients__list {
-  gap: 30px;
-}
-
-.clients__link {
-  width: 170px;
+&__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
   height: 92px;
   border: 1px solid $cliets-logo;
   border-radius: 4px;
@@ -38,21 +48,48 @@
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__icons {
+&__icons {
   fill: $cliets-logo;
   transition-property: fill;
   transition-duration: 250ms;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__link:hover,
-.clients__link:hover .clients__icons {
+&__link:hover,
+&__link:hover &__icons {
   border-color: $accent-color-blue;
   fill: $accent-color-blue;
 }
 
-.clients__link:focus,
-.clients__link:focus .clients__icons {
+&__link:focus,
+&__link:focus &__icons {
   border-color: $accent-color-blue;
   fill: $accent-color-blue;
+}
+
+@media screen and (max-width: 767px) {
+  &__item {
+    @include calc (2, 30px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  &__item {
+    @include calc (3, 30px);
+  }
+  &__link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  &__item {
+    @include calc (6, 30px);
+  }
+  &__link {
+    width: 170px;
+  }
+
+}
+
 }

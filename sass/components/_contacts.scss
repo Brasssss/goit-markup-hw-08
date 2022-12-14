@@ -46,29 +46,30 @@
   }
 
   @media screen and (min-width: 768px) {
-    
+  
     display: flex;
     flex-flow: column;
     justify-content: center;
     margin-left: auto;
-    &__item:not(:last-child){
+    &__item:not(:last-child) {
       margin-bottom: 10px;
     }
-    
-    
   
   }
+  
   
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-flow: row;
+    justify-content: center;
     align-items: center;
-    &__link{
-      
+    &__item:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 30px;
     }
     
     
- 
+    
     
 
   }

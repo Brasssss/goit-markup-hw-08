@@ -148,7 +148,8 @@
   text-align: center;
 }
 
-&__label{
+
+&__div-label{
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -246,7 +247,7 @@
   .footer-form__title {
     margin-right: auto;
   }
-  .footer-form__label{
+  .footer-form__div-label{
     flex-flow: nowrap;
   }
 

@@ -11,7 +11,7 @@
   border-radius: 4px;
 }
 
-.modal-close {
+.modal__modal-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -27,8 +27,8 @@
   
 }
 
-.modal-close:hover,
-.modal-close:focus {
+.modal__modal-close:hover,
+.modal__modal-close:focus {
   fill: $accent-color-blue;
 }
 

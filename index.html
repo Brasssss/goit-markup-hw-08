@@ -36,7 +36,7 @@
           </a>
           <ul class="navigate__list">
             <li class="navigate__item">
-              <a class="navigate__link nav-list__link--active" href="./index.html">Студія</a>
+              <a class="navigate__link navigate__link--active" href="./index.html">Студія</a>
             </li>
             <li class="navigate__item">
               <a class="navigate__link" href="./portfolio.html">Портфоліо</a>
@@ -481,26 +481,28 @@
             </li>
           </ul>
         </div>
+        
         <form class="footer-form">
-            <h3 class="footer-form__title">Підпишіться на розсилку</h3>
-            <label class="footer-form__label">
-              <input
-                type="email"
-                name="user-email"
-                class="footer-form__input"
-                placeholder="E-mail"
-                required
-              >
-              <button type="submit" class="footer-form__button">
+          <h3 class="footer-form__title">Підпишіться на розсилку</h3>
+          <div class="footer-form__div-label">
+          <label class="footer-form__label">
+            <input
+              type="email"
+              name="user-email"
+              class="footer-form__input"
+              placeholder="E-mail"
+              required
+            >
+          </label>
+            <button type="submit" class="footer-form__button">
               Підписатися               
-              <svg class="footer-form__icon" width="24" height="24">
-                <use href="./images/symbol-defs.svg#icon-airplane"></use>
-              </svg>
+            <svg class="footer-form__icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-airplane"></use>
+            </svg>
                 
             </button>
-            </label>
-            
-            
+          </div>
+          
             
         </form>
       </div>
@@ -510,7 +512,7 @@
     <!-- modal-window -->
 
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-close__icon" width="20" height="20">
@@ -576,7 +578,7 @@
           <button type="submit" class="button-form-submit">Відправити</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <script src="./js/modal.js"></script>
   </body>

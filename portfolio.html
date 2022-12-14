@@ -24,22 +24,26 @@
   </head>
 
   <body class="body">
-    <header class="header">
+
+    <!-- Header -->
+
+
+<header class="header">
       <div class="container top-place">
         <nav class="navigate">
           <a class="logo logo--top-distance" lang="en" href="/">
             <span class="logo__first-part">Web</span>
             <span class="logo__second-part">Studio</span>
           </a>
-          <ul class="nav-list">
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="./index.html">Студія</a>
+          <ul class="navigate__list">
+            <li class="navigate__item">
+              <a class="navigate__link " href="./index.html">Студія</a>
             </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link nav-list__link--active" href="./portfolio.html">Портфоліо</a>
+            <li class="navigate__item">
+              <a class="navigate__link navigate__link--active" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="./index.html">Контакти</a>
+            <li class="navigate__item">
+              <a class="navigate__link" href="./index.html">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -61,8 +65,15 @@
             </a>
           </li>
         </ul>
+        <button class="header__burger-btn" type="button" data-modal-open>
+          <svg class="header__burger-icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-burger-menu_40px"></use>
+          </svg>
+        </button>
       </div>
     </header>
+
+
     <!-- Перелік розробок/portfolio -->
     <main>
       <section class="portfolio-projects">
@@ -276,22 +287,26 @@
         </div>
       </section>
     </main>
-        <footer class="footer">
+
+    <!-- footer -->
+
+
+    <footer class="footer">
       <div class="container flex">
-        <div class="footter-part">
+        <div class="footer__part">
           <a class="logo logo--bottom-distance" lang="en" href="/">
             <span class="logo__first-part">Web</span>
             <span class="logo__second-part logo__second-part--color">Studio</span>
             </a>
-          <address class="adress">
-            <ul>
-              <li class="adress__item">
+          <address class="address">
+            <ul class="address__list">
+              <li class="address__item">
                 <a class="address__link" href="">м. Київ, пр-т Лесі Українки, 26</a>
               </li>
-              <li class="adress__item">
+              <li class="address__item">
                 <a class="address__contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
-              <li><a class="address__contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
+              <li class="address__item"><a class="address__contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
           </address>
         </div>
@@ -329,31 +344,31 @@
           </ul>
         </div>
         <form class="footer-form">
-          <div class="footer-form__part">
+          <h3 class="footer-form__title">Підпишіться на розсилку</h3>
+          <div class="footer-form__div-label">
             <label class="footer-form__label">
-              <span class="footer-form__title">Підпишіться на розсилку</span>
               <input
-                type="email"
-                name="user-email"
-                class="footer-form__input"
-                placeholder="E-mail"
-                required
+              type="email"
+              name="user-email"
+              class="footer-form__input"
+              placeholder="E-mail"
+              required
               >
             </label>
-            <div class="icon-button">
-              <button type="submit" class="icon-button__submit">
+            <button type="submit" class="footer-form__button">
                 Підписатися               
-                <svg class="icon-button__icon" width="24" height="24">
-                  <use href="./images/symbol-defs.svg#icon-airplane"></use>
-                </svg>
+              <svg class="footer-form__icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-airplane"></use>
+              </svg>
                 
-              </button>
-            </div> 
-            
-            
+            </button>
           </div>
+          
+            
         </form>
       </div>
     </footer>
   </body>
+
+
 </html>

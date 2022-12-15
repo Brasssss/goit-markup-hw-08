@@ -64,7 +64,7 @@
             </a>
           </li>
         </ul>
-        <button class="header__burger-btn" type="button"  >
+        <button class="header__burger-btn" type="button" data-menu-open >
           <svg class="header__burger-icon" width="40" height="40">
             <use href="./images/symbol-defs.svg#icon-burger-menu_40px"></use>
           </svg>
@@ -72,15 +72,15 @@
       </div>
 
 
-      <div class="mob-menu ">
-        <button type="button" class="mob-menu__btn-close" >
+      <div class="mob-menu is-hidden" data-menu>
+        <button type="button" class="mob-menu__btn-close" data-menu-close>
           <svg class="modal-close__icon" width="20" height="20">
             <use href="./images/symbol-defs.svg#icon-close-black-X"></use>
           </svg>
         </button>
         <ul class="mob-menu__list">
             <li class="mob-menu__item">
-              <a class="mob-menu__link" href="./index.html">Студія</a>
+              <a class="mob-menu__link mob-menu__link--position-active" href="./index.html">Студія</a>
             </li>
             <li class="mob-menu__item">
               <a class="mob-menu__link" href="./portfolio.html">Портфоліо</a>
@@ -102,7 +102,6 @@
             </a>
           </li>
         </ul>
-
 
         <ul class="mob-menu__soc-list">
           <li class="mob-menu__soc-item ">
@@ -627,6 +626,7 @@
       </div>
     </div>
 
+    
     <script src="./js/modal.js"></script>
   </body>
 </html>

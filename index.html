@@ -201,12 +201,22 @@
             <ul class="services__list">
               <li class="services__item">
                 <div class="services__div-image">
-                  <img class="services__image"
-                    src="./images/box-1.jpg"
+                  <picture>
+                    <source
+                    srcset="
+                    ./images/desktop-img/1x/1x-desktop-service-1.jpg 1x,
+                    ./images/desktop-img/2x/2x-desktop-service-1.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    >
+                    <img 
+                    class="services__image"
+                    src="./images/desktop-img/1x/1x-desktop-service-1.jpg"
                     alt="Долонi на клавiатурi"
                     width="370"
                     height="294"
-                  >
+                    >
+                  </picture>
                   <div class="services__image-subscriprion">
                     <h3>Десктопні&nbsp;додатки</h3>
                   </div>
@@ -215,23 +225,44 @@
 
               <li class="services__item">
                 <div class="services__div-image">
-                  <img class="services__image"
-                    src="./images/box-2.jpg"
+                  <picture>
+                    <source
+                    srcset="
+                    ./images/desktop-img/1x/1x-desktop-service-2.jpg 1x,
+                    ./images/desktop-img/2x/2x-desktop-service-2.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    >
+                    <img 
+                    class="services__image"
+                    src="./images/desktop-img/1x/1x-desktop-service-2.jpg"
                     alt="Розробка додаткiв на ноутбуцi"
                     width="370"
                     height="294"
-                  >
+                    >
+                  </picture>
                   <div class="services__image-subscriprion"><h3>Мобільні&nbsp;додатки</h3></div>
                 </div>
               </li>
 
               <li class="services__item">
                 <div class="services__div-image">
-                  <img class="services__image"
-                  src="./images/box-3.jpg" 
-                  alt="Планшет у долонях" 
-                  width="370" 
-                  height="294" >
+                  <picture>
+                    <source
+                    srcset="
+                    ./images/desktop-img/1x/1x-desktop-service-3.jpg 1x,
+                    ./images/desktop-img/2x/2x-desktop-service-3.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    >
+                    <img 
+                    class="services__image"
+                    src="./images/desktop-img/1x/1x-desktop-service-3.jpg"
+                    alt="Планшет у долонях"
+                    width="370"
+                    height="294"
+                    >
+                  </picture>
                   <div class="services__image-subscriprion"><h3>Дизайнерські&nbsp;рішення</h3></div>
                 </div>
               </li>
@@ -248,14 +279,36 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__card-list">
             <li class="team__item-card">
-              
-              <img
+              <picture>
+                <source
+                srcset="
+                ./images/desktop-img/1x/1x-desktop-team-card-1.jpg 1x,
+                ./images/desktop-img/2x/2x-desktop-team-card-1.jpg 2x
+                "
+                media="(min-width: 1200px)"
+                >
+                <source
+                srcset="
+                ./images/tablet-img/1x/1x-tablet-team-card-1.jpg 1x,
+                ./images/tablet-img/2x/2x-tablet-team-card-1.jpg 2x
+                "
+                media="(min-width: 768px)"
+                >
+                <source
+                srcset="
+                ./images/mobile-img/1x/1x-mobile-team-card-1.jpg 1x,
+                ./images/mobile-img/2x/2x-mobile-team-card-1.jpg 2x
+                "
+                media="(max-width: 767px)"
+                >
+                <img
                 class="team__image"
-                src="./images/img-pers-1.jpg"
-                alt="Усмiхнений чоловiк в окулярах з бородою"
-                width="270"
-                height="260"
-              >
+                src="./images/mobile-img/1x/1x-mobile-team-card-1.jpg"
+                alt="Усмiхнений чоловік в окулярах"
+                width="450"
+                height="460"
+                >
+              </picture>
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p class="team__position" lang="en">Product Designer</p>
               <ul class="social">
@@ -290,13 +343,37 @@
               </ul>
             </li>
             <li class="team__item-card">
-              <img
+              <picture>
+                <source
+                srcset="
+                ./images/desktop-img/1x/1x-desktop-team-card-2.jpg 1x,
+                ./images/desktop-img/2x/2x-desktop-team-card-2.jpg 2x
+                "
+                media="(min-width: 1200px)"
+                >
+                <source
+                srcset="
+                ./images/tablet-img/1x/1x-tablet-team-card-2.jpg 1x,
+                ./images/tablet-img/2x/2x-tablet-team-card-2.jpg 2x
+                "
+                media="(min-width: 768px)"
+                >
+                <source
+                srcset="
+                ./images/mobile-img/1x/1x-mobile-team-card-2.jpg 1x,
+                ./images/mobile-img/2x/2x-mobile-team-card-2.jpg 2x
+                "
+                media="(max-width: 767px)"
+                >
+                <img
                 class="team__image"
-                src="./images/img-pers-2.jpg"
+                src="./images/mobile-img/1x/1x-mobile-team-card-2.jpg"
                 alt="Усмiхнена бiлява жiнка"
-                width="270"
-                height="260"
-              >
+                width="450"
+                height="460"
+                >
+              </picture>
+              
               <h3 class="team__name">Ольга Рєпіна</h3>
               <p class="team__position" lang="en">Frontend Developer</p>
               <ul class="social">
@@ -331,13 +408,36 @@
               </ul>
             </li>
             <li class="team__item-card">
-              <img
+              <picture>
+                <source
+                srcset="
+                ./images/desktop-img/1x/1x-desktop-team-card-3.jpg 1x,
+                ./images/desktop-img/2x/2x-desktop-team-card-3.jpg 2x
+                "
+                media="(min-width: 1200px)"
+                >
+                <source
+                srcset="
+                ./images/tablet-img/1x/1x-tablet-team-card-3.jpg 1x,
+                ./images/tablet-img/2x/2x-tablet-team-card-3.jpg 2x
+                "
+                media="(min-width: 768px)"
+                >
+                <source
+                srcset="
+                ./images/mobile-img/1x/1x-mobile-team-card-3.jpg 1x,
+                ./images/mobile-img/2x/2x-mobile-team-card-3.jpg 2x
+                "
+                media="(max-width: 767px)"
+                >
+                <img
                 class="team__image"
-                src="./images/img-pers-3.jpg"
-                alt="Усмiхнений чоловiк з бородою"
-                width="270"
-                height="260"
-              >
+                src="./images/mobile-img/1x/1x-mobile-team-card-3.jpg"
+                alt="Усмiхнений чоловік"
+                width="450"
+                height="460"
+                >
+              </picture>
               <h3 class="team__name">Микола Тарасов</h3>
               <p class="team__position" lang="en">Marketing</p>
               <ul class="social">
@@ -372,13 +472,36 @@
               </ul>
             </li>
             <li class="team__item-card">
-              <img
+              <picture>
+                <source
+                srcset="
+                ./images/desktop-img/1x/1x-desktop-team-card-4.jpg 1x,
+                ./images/desktop-img/2x/2x-desktop-team-card-4.jpg 2x
+                "
+                media="(min-width: 1200px)"
+                >
+                <source
+                srcset="
+                ./images/tablet-img/1x/1x-tablet-team-card-4.jpg 1x,
+                ./images/tablet-img/2x/2x-tablet-team-card-4.jpg 2x
+                "
+                media="(min-width: 768px)"
+                >
+                <source
+                srcset="
+                ./images/mobile-img/1x/1x-mobile-team-card-4.jpg 1x,
+                ./images/mobile-img/2x/2x-mobile-team-card-4.jpg 2x
+                "
+                media="(max-width: 767px)"
+                >
+                <img
                 class="team__image"
-                src="./images/img-pers-4.jpg"
-                alt="Усмiхнений чоловiк в окулярах з бородою"
-                width="270"
-                height="260"
-              >
+                src="./images/mobile-img/1x/1x-mobile-team-card-4.jpg"
+                alt="Усмiхнений чоловік в окулярах"
+                width="450"
+                height="460"
+                >
+              </picture>
               <h3 class="team__name">Михайло Єрмаков</h3>
               <p class="team__position" lang="en">UI Designer</p>
               <ul class="social">

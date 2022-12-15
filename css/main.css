@@ -372,9 +372,9 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #2f303a;
-  /* 2x screens, retina, 640x480 image */
+  /* 2x screens, retina */
 }
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero .hero {
     background-image: url(../images/mobile-img/2x/2x-mobile-hero.jpg);
   }
@@ -416,15 +416,41 @@ a {
   color: #212121;
   background-color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet-img/1x/1x-tablet-hero.jpg);
+    /* 2x screens, retina */
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url(../images/mobile-img/2x/2x-mobile-hero.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop-img/1x/1x-desktop-hero.jpg);
+    /* 2x screens, retina */
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url(../images/desktop-img/2x/2x-desktop-hero.jpg);
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__inner {
     width: 100%;
     margin: auto;
   }
+}
+@media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     line-height: 1.88;
   }
+}
+@media screen and (min-width: 1200px) {
   .hero__button {
     width: 216px;
   }

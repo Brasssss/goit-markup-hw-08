@@ -1,16 +1,17 @@
 .modal {
   position: absolute;
-  top: 5%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 0);
-  width: 450px;
-  max-height: 609px;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
   background: $background-color-full-white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
 
-&__btn-close {
+.modal-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -26,15 +27,19 @@
 
 }
 
-&__btn-close:hover,
-&__btn-close:focus {
+.modal-close:hover,
+.modal-close:focus {
   fill: $accent-color-blue;
 }
 
 
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
 
-
-&__title {
+.modal-title {
   display: block;
   justify-content: center;
   align-items: center;
@@ -42,12 +47,12 @@
 
   font-weight: 700;
   font-size: 20px;
-  line-height: calc(30/20);
+  line-height: 1.15;
   text-align: center;
   color: $text-color-black;
 }
 
-&__form {
+.modal-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,7 +61,7 @@
   gap: 10px;
 }
 
-&__span-text {
+.modal-span-text {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -64,8 +69,8 @@
   color: $text-color-grey;
 }
 
-&__input {
-  width: 370px;
+.modal-input {
+  width: 448px;
   height: 40px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -76,29 +81,29 @@
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&__input:hover,
-&__input:focus {
+.modal-input:hover,
+.modal-input:focus {
   border: 1px solid $text-color-blue;
   border-radius: 4px;
 }
 
-&__input::placeholder {
+.modal-input::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-&__div-person,
-&__div-phone,
-&__div-mail {
+.div-person,
+.div-phone,
+.div-mail {
   display: block;
   position: relative;
 }
 
-&__icon-person,
-&__icon-phone,
-&__icon-mail {
+.input-icon-person,
+.input-icon-phone,
+.input-icon-mail {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -108,34 +113,34 @@
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&__input:hover+.modal__icon-person {
+.modal-input:hover+.input-icon-person {
   fill: $accent-color-blue;
 }
 
-&__input:focus+.modal__icon-person {
+.modal-input:focus+.input-icon-person {
   fill: $accent-color-blue;
 }
 
-&__input:hover+.modal__icon-phone {
+.modal-input:hover+.input-icon-phone {
   fill: $accent-color-blue;
 }
 
-&__input:focus+.modal__icon-phone {
+.modal-input:focus+.input-icon-phone {
   fill: $accent-color-blue;
 }
 
-&__input:hover+.modal__icon-mail {
+.modal-input:hover+.input-icon-mail {
   fill: $accent-color-blue;
 }
 
-&__input:focus+.modal__icon-mail {
+.modal-input:focus+.input-icon-mail {
   fill: $accent-color-blue;
 }
 
-&__label-feedback {
+.modal-label-feedback {
   display: flex;
   flex-direction: column;
-  width: 370px;
+  width: 100%;
   height: 120px;
   margin-bottom: 20px;
   color: $text-color-grey;
@@ -144,7 +149,7 @@
   letter-spacing: 0.01em;
 }
 
-&__user-coments {
+.user-coments-area {
   display: block;
   margin-top: 4px;
   padding: 12px 16px;
@@ -154,42 +159,42 @@
   resize: none;
 }
 
-&__user-coments:hover,
-&__user-coments:focus {
+.user-coments-area:hover,
+.user-coments-area:focus {
   border: 1px solid $accent-color-blue;
   border-radius: 4px;
 }
 
-&__div-check {
+.div-input-check {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-&__input-check {
+.input-check {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 5px;
 }
 
-&__input-check:checked + &__agree-check &__check-span {
-  background-color: $accent-color-blue;
+.input-check:checked+.agree-check .check-span {
+  background-color: var(--accent-color-blue);
   border: none;
   fill: $border-color-grey;
 }
 
-&__agree-check {
+.agree-check {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 12px;
-  line-height: calc(14 / 12);
+  font-size: 14px;
+  line-height: 1.71;
   color: $text-color-grey;
 }
 
 
-&__agree-check &__check-span {
+.agree-check .check-span {
   margin-right: 8px;
   width: 16px;
   height: 15px;
@@ -205,7 +210,7 @@
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&__agree-check-link {
+.agree-check-link {
   margin-left: 7px;
   font-size: 14px;
   line-height: 1.71;
@@ -213,7 +218,7 @@
   text-decoration-line: underline;
 }
 
-&__btn-form-submit {
+.button-form-submit {
   display: block;
   width: 200px;
   height: 50px;
@@ -227,43 +232,9 @@
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&__btn-form-submit:hover,
-&__btn-form-submit:focus {
+.button-form-submit:hover,
+.button-form-submit:focus {
   background: $accent-color-blue;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-
-@media screen and (min-width: 480px) {
-  max-width: 480px;
-}
-
-@media screen and (min-width: 768px) {
-  max-width: 768px;
-  top: 10%
-}
-
-@media screen and (min-width: 1200px) {
-  max-width: 1200;
-  top: 15%;
-  width: 528px;
-  min-height: 581px;
-
-  &__input {
-    width: 448px;
-
-  }
-
-  &__label-feedback {
-    width: 448px;
-  }
-
-  &__agree-check {
-    font-size: 124x;
-    line-height: 1.71;
-    color: $text-color-grey;
-  }
-
-}
-
 }

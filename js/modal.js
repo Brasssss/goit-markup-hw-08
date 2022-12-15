@@ -19,6 +19,7 @@
     closeModalBtn: document.querySelector("[data-menu-close]"),
     modal: document.querySelector("[data-menu]"),
     body: document.querySelector("body"),
+    menuList: document.querySelector(".mob-menu__list"),
   };
 
   refs.openModalBtn.addEventListener("click", toggleModal);
@@ -28,4 +29,9 @@
     refs.modal.classList.toggle("is-hidden");
     refs.body.classList.toggle("no-scroll");
   }
+  function removeModal() {
+    refs.modal.classList.add("is-hidden");
+    refs.body.classList.remove("no-scroll");
+  } 
+
 })();

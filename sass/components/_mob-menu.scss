@@ -8,6 +8,7 @@
   z-index: 1;
   background-color: $background-color-full-white;
   padding: 48px 40px;
+  overflow: scroll;
 
 
 &__btn-close {
@@ -31,7 +32,7 @@
 
 
 &__list {
-  margin-bottom: 40px;
+  margin-bottom: 306px;
 }
 
 

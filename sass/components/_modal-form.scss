@@ -276,11 +276,13 @@
 
 @media screen and (min-width: 1200px) {
   max-width: 1200;
-  top: 50%;
+  top: 15%;
   width: 528px;
   min-height: 581px;
 
-  c
+  &__input {
+    width: 448px;
+  }
 
   &__label-feedback {
     width: 448px;

@@ -1188,11 +1188,14 @@ a {
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 1200;
-    top: 50%;
+    top: 15%;
     width: 528px;
     min-height: 581px;
   }
-  c .modal__label-feedback {
+  .modal__input {
+    width: 448px;
+  }
+  .modal__label-feedback {
     width: 448px;
   }
   .modal__agree-check {

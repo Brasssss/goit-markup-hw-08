@@ -240,8 +240,18 @@
     margin-left: 0;
     margin-right: 70px;
   }
+
+  .address {
+  
+    &__list {
+      text-align: left;
+    }
+  }
   .footer-social{
     margin-right: 93px;
+    &__link {
+        margin-bottom: 0;
+    }
   }
 
   .footer-form__title {

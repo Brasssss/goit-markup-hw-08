@@ -380,7 +380,8 @@ a {
   }
 }
 .hero__inner {
-  max-width: 100%;
+  max-width: 480px;
+  max-height: 400px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -390,7 +391,7 @@ a {
   color: #ffffff;
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.88;
+  line-height: 1.61;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -418,6 +419,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .hero {
+    padding: 118px 204px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet-img/1x/1x-tablet-hero.jpg);
     /* 2x screens, retina */
   }
@@ -425,6 +427,11 @@ a {
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero .hero {
     background-image: url(../images/mobile-img/2x/2x-mobile-hero.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__inner {
+    width: 460px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -440,14 +447,14 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .hero__inner {
-    width: 100%;
-    margin: auto;
+    width: 770px;
+    max-width: 1200px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
-    line-height: 1.88;
+    line-height: 1.36;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -458,6 +465,7 @@ a {
 
 .features {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .features__list {
   display: flex;
@@ -488,6 +496,7 @@ a {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: left;
 }
 .features__text {
   color: #757575;
@@ -496,6 +505,9 @@ a {
 @media screen and (min-width: 768px) {
   .features__item {
     width: calc((100% - 30px) / 2);
+  }
+  .features__title {
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -908,8 +920,14 @@ a {
     margin-left: 0;
     margin-right: 70px;
   }
+  .footer .address__list {
+    text-align: left;
+  }
   .footer .footer-social {
     margin-right: 93px;
+  }
+  .footer .footer-social__link {
+    margin-bottom: 0;
   }
   .footer .footer-form__title {
     margin-right: auto;
@@ -1263,7 +1281,6 @@ a {
 .portfolio-project-list-title {
   padding-top: 20px;
   padding-bottom: 4px;
-  color: var(--text-color-black);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;

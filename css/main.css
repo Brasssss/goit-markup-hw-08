@@ -886,7 +886,7 @@ a {
   align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  background-color: #212121;
+  background-color: #2f303a;
 }
 .footer .footer-form__button {
   display: flex;

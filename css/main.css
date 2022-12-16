@@ -445,6 +445,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    padding: 200px auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop-img/1x/1x-desktop-hero.jpg);
     background-size: cover;
     background-position: center;
@@ -532,7 +533,6 @@ a {
 }
 
 .services {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 @media screen and (max-width: 1200px) {
@@ -873,7 +873,7 @@ a {
 }
 .footer .footer-form__input {
   display: block;
-  width: 450px;
+  width: 300px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -914,6 +914,16 @@ a {
 .footer .footer-form__icon {
   fill: #ffffff;
   margin-left: 10px;
+}
+@media screen and (max-width: 479px) {
+  .footer .footer-form__input {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .footer .footer-form__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer .flex {
@@ -1196,14 +1206,14 @@ a {
 @media screen and (min-width: 768px) {
   .modal {
     max-width: 768px;
-    top: 10%;
+    top: 5%;
     width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 1200;
-    top: 15%;
+    top: 5%;
     width: 528px;
     min-height: 581px;
   }
